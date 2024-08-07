@@ -24,5 +24,56 @@ This project demonstrates a complete data analysis workflow using Python. The st
     ```bash
     pip install pandas matplotlib scikit-learn
     ```
+4. Prepare Data
+
+Place your CSV file in the project directory. Ensure it is named data.csv or update the script accordingly.
+
+### Running the Analysis
+
+1. Place your CSV file
+
+Make sure the `data.csv` file is located in the same directory as data_analysis.py.
+
+2. Run the script
+    ```bash
+    python3 data_analysis.py
+    ```
+
+3. Output
+
+The script will display the contents of the CSV file, a statistical summary of the data, and data types.
+
+### Script Details
+
+data_analysis.py: Reads data.csv, prints the data, shows statistical summaries, and displays data types.
+
+    ```bash
+    import pandas as pd
+
+    # Load data
+    data = pd.read_csv('data.csv')
+
+    # Display data
+    print("Data:")
+    print(data)
+
+    # Display statistical summary
+    print("\nStatistical Summary:")
+    print(data.describe())
+
+    # Display data types
+    print("\nData Types:")
+    print(data.dtypes)
+    ```
+
+
+##Acknowledgements
+
+The `pandas` library for data manipulation and analysis.
+
+
+
+
+Feel free to modify any section to better fit your project's specifics or personal preferences!
 
 
